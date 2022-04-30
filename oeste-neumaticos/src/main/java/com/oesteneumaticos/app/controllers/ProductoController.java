@@ -36,35 +36,4 @@ public class ProductoController {
         return null;
     }
 
-    @GetMapping("/crear/camioneta")
-    public void cargarNeumaticoCamioneta(HttpServletResponse response, Optional<Integer> ancho, Optional<Integer> perfil, Optional<Integer> rodado) throws IOException {
-        if (ancho.isPresent() && perfil.isPresent() && rodado.isPresent()) {
-            Neumatico n = new Neumatico();
-            n.setCategoria(2200);
-            n.setAncho(ancho.get());
-            n.setPerfil(perfil.get());
-            n.setRodado(rodado.get());
-            neumaticoService.cargarNeumatico(n);
-        }
-        response.sendRedirect("/products");
-    }
-
-    @GetMapping("/crear/auto")
-    public void cargarNeumaticoAuto(
-            HttpServletResponse response, Optional<Integer> ancho,
-            Optional<Integer> perfil, Optional<Integer> rodado,
-            Optional<String> marca) throws IOException {
-        if (ancho.isPresent() && perfil.isPresent() && rodado.isPresent() && marca.isPresent()) {
-            Neumatico n = new Neumatico();
-            n.setCategoria(2100);
-            n.setAncho(ancho.get());
-            n.setPerfil(perfil.get());
-            n.setRodado(rodado.get());
-            n.setMarca(marca.get());
-            neumaticoService.cargarNeumatico(n);
-        }
-        response.sendRedirect("/products");
-    }
-
-
 }
