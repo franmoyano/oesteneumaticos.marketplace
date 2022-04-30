@@ -12,8 +12,6 @@ public class MainController {
     @Autowired
     NeumaticoService neumaticoService;
 
-
-
     @GetMapping("")
     public void nada() {
     }
