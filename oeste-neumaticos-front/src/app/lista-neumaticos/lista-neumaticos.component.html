@@ -1,0 +1,25 @@
+<div class="container">  
+    <h2>Lista de neumaticos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Categoria</th>
+                <th>Marca</th>
+                <th>Ancho</th>
+                <th>Perfil</th>
+                <th>Rodado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let neumatico of neumaticos">
+                <td>{{neumatico.id}}</td>
+                <td>{{neumatico.categoria}}</td>
+                <td>{{neumatico.marca}}</td>
+                <td>{{neumatico.ancho}}</td>
+                <td>{{neumatico.perfil}}</td>
+                <td>{{neumatico.rodado}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

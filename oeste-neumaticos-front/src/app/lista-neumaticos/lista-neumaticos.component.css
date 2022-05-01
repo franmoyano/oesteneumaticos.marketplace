@@ -1,0 +1,33 @@
+.container {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.container h2 {
+    margin: 0;
+    padding: 20px;
+}
+
+.container table {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.container table thead {
+    color: #eee;
+    background-color: rgb(244, 110, 26);
+}
+
+.container table thead th,
+.container table tbody td {
+    padding: 10px 20px;
+}
+
+.container table tbody tr:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+}
