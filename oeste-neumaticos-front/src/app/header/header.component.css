@@ -5,6 +5,7 @@ nav {
 .search-container {
     width: 80%;
     margin: auto;
+    padding: 30px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -29,6 +30,10 @@ nav {
     width: 20%;
     font-weight: bold;
     justify-content: flex-end;
+}
+
+.searchbox label {
+    font-size: 1rem;
 }
 
 .searchbox select {

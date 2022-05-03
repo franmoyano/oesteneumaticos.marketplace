@@ -1,0 +1,32 @@
+.container {
+    margin: 40px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 20px;
+}
+
+.producto {
+    box-shadow: 0px 0px 6px rgba(62, 62, 62, 0.1);
+    background-color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 250ms;
+}
+
+.producto:hover {
+    box-shadow: 0px 0px 6px rgba(62, 62, 62, 0.3);
+    cursor: pointer;
+}
+
+.imagen-producto {
+    height: 200px;
+}
+
+.imagen-producto img {
+    max-width: 80%;
+    max-width: 80%;
+}
